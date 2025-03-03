@@ -91,7 +91,33 @@ An Expo Go account allows you to log in, sync projects, and access additional fe
   - For iOS: Open with Xcode’s simulator (`i` in the terminal)
   - For Android: Start an Android emulator (`a` in the terminal)
 
-## Step 7: Start Coding!
+## Step 7: (Optional) Install Lucide Icons for React Native
+If you want to use **Lucide Icons** in your React Native project, you can install them with the following command:
+
+```sh
+npm install lucide-react-native
+```
+
+Then, you can use the icons in your components like this:
+
+```jsx
+import { View, Text } from 'react-native';
+import { Activity, Star } from 'lucide-react-native';
+
+const App = () => {
+  return (
+    <View>
+      <Text>Hello World</Text>
+      <Activity size={32} color="black" />
+      <Star size={32} color="gold" />
+    </View>
+  );
+};
+
+export default App;
+```
+
+## Step 8: Start Coding!
 Open the project in a code editor like **VS Code** and modify `App.js` to start building your React Native app.
 
 ## Troubleshooting
@@ -102,6 +128,7 @@ Open the project in a code editor like **VS Code** and modify `App.js` to start 
 - On Windows, ensure you run the terminal as Administrator.
 
 Happy coding! 🚀
+
 
 
 
